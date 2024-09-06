@@ -8,8 +8,8 @@ from random import shuffle
 from tqdm import tqdm
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, fbeta_score, confusion_matrix
 
-#nltk.download('brown')
-#nltk.download('universal_tagset')
+nltk.download('brown')
+nltk.download('universal_tagset')
 
 dataset = list(nltk.corpus.brown.tagged_sents(tagset = "universal"))
 for sent in dataset:
